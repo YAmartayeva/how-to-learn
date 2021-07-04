@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 
-.logo__place_header {
+.logo_place_header {
   height: 32px;
   width: 183px;
   position: absolute;
@@ -32,20 +32,22 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   display: flex;
   align-self: center;
   z-index: 2;
+
 }
 
 .header__subtitle {
-  width: 338px;
+  width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
   bottom: 30px;
   left: 64px;
+  margin: 0;
 }
 
 .header__link {
@@ -249,6 +251,7 @@
 
 .section-subtitle_theme_dark {
   width: 60%;
+  font-weight: normal;
   line-height: 34px;
   font-size: 24px;
   color: white;
@@ -316,7 +319,7 @@
   justify-content: space-between;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
   width: 183px;
 }
