@@ -177,12 +177,23 @@
   text-align: center;
 }
 
-.cards__description{
+.cards__description {
   margin: 16px 0 0;
   padding: 0;
   line-height: 23px;
   font-size: 18px;
   text-align: center;
+}
+
+/* Блок Video */
+.video__iframes {
+  margin: 50px auto 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.video__iframe {
+  margin: 0 10px;
 }
 
 
