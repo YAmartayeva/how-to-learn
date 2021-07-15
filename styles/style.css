@@ -186,6 +186,7 @@
 }
 
 /* Блок Video */
+
 .video__iframes {
   margin: 50px auto 0px;
   display: flex;
@@ -194,6 +195,17 @@
 
 .video__iframe {
   margin: 0 10px;
+}
+
+/* Блок Oakley */
+
+.oakley {
+  position: relative;
+  margin-top: 160px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
