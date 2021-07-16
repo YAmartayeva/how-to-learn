@@ -1,14 +1,18 @@
 @import url('normalize.css');
+@import url(../blocks/rotation/rotation.css);
 @import url(../blocks/header/__square-pic/header__square-pic.css);
+@import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
 
-@keyframes rotation {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
+
+a {
+  opacity: 1;
 }
+
+a:hover {
+  opacity: 0.6;
+  transition: ease-in-out 0.2s;
+}
+
 
 .page {
   min-width: 1100px;
@@ -184,15 +188,15 @@
 }
 
 .video__iframe {
-  margin: 0 10px;
+  margin: 0 10px -50px;
+  z-index: 1;
 }
 
 /* Блок Oakley */
 
 .oakley {
   position: relative;
-  margin-top: 160px;
-  margin-bottom: 80px;
+  padding-top: 160px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -257,7 +261,17 @@
 
 .khan {
   background-color: #f2f2f2;
-  margin-top: 105px;
+  padding-top: 105px;
+  display: flex;
+  align-items: center;
+}
+
+.khan__container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .khan__author {
@@ -323,7 +337,6 @@
 /* Блок feynman */
 
 .feynman {
-  margin-top: 100px;
   min-height: 890px;
   background-color: #f2f2f2;
   z-index: 1;
@@ -340,7 +353,7 @@
   text-align: center;
   z-index: 4;
   align-self: center;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 0;
 }
 
@@ -441,18 +454,7 @@
   margin: 0;
 }
 
-.kaufman__triangle {
-  background-image: url(../images/kaufman-triangle.svg);
-  background-size: cover;
-  position: absolute;
-  right: -210px;
-  width: 877px;
-  height: 877px;
-  z-index: -1;
-  margin: 0;
-  top: 0;
-  animation: rotation 20s infinite linear;
-}
+
 
 /* Блок resources */
 
